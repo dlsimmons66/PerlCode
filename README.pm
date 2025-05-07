@@ -74,18 +74,6 @@ Grafana for visual display.
     # ps -aef|grep -e "/opt/rofs/rofs.pl" -e "defunct"
     root      8029 24856  0 10:25 pts/2    00:00:00 grep /opt/rofs/rofs.pl
 
-
-# Disclaimer:
-"This script is provided 'as is' and without any warranty, 
-express or implied, including but not limited to the implied 
-warranties of merchantability, fitness for a particular 
-purpose, and non-infringement. I will not be liable for any 
-damages, including but not limited to direct, indirect, 
-incidental, special, consequential, or punitive damages, 
-arising out of the use or inability to use this script, 
-even if I have been advised of the possibility of such 
-damages." 
-
 # Disclaimer:
 This script is provided 'as is' and without any warranty, 
 express or implied, including but not limited to the implied 
