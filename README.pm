@@ -1,3 +1,7 @@
+###
+### ROFS
+###
+
 # Purpose:
 The rofs.pl script is designed to use perl multithreading 
 capabilities in order to record the current state of the
@@ -74,7 +78,36 @@ Grafana for visual display.
     # ps -aef|grep -e "/opt/rofs/rofs.pl" -e "defunct"
     root      8029 24856  0 10:25 pts/2    00:00:00 grep /opt/rofs/rofs.pl
 
-# Disclaimer:
+
+###
+### AARS.pl
+###
+
+OMI Agent Automate Repair
+- Determines agent version for correct process & policy checks
+- Restarts the agent if it is not running
+- Checks for agent message buffering and remediates
+- Ensures all Agent Certs are up to date & remediates if not
+- Resets the active and inactive policies based on system type
+- Logs all changes made
+
+
+Executing the script:
+
+    # /opt/rofs/aars.pl
+
+Logging:
+    # Logging is written to the users home directory for additional
+    # Processing of the resulting script.
+
+    # id = corp login id 
+    chomp $local_host;
+    my $LogFile  = "/export/home/{id}/agt_$local_host.log";
+
+
+###
+### Disclaimer:
+###
 This script is provided 'as is' and without any warranty, 
 express or implied, including but not limited to the implied 
 warranties of merchantability, fitness for a particular 
