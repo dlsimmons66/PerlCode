@@ -3,7 +3,7 @@
 ### plain old documentation
 =pod
     Name:		rofs.pl
-	Dirs:		/opt/rofs, /var/logs/rofs		
+    Dirs:		/opt/rofs, /var/logs/rofs		
     Purpose:	To pull metrics on the number of read-only filesystems in each
     environment (prod/qa/dev) and feed them into Graphite & Grafana.
 
